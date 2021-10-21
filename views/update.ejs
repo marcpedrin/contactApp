@@ -1,0 +1,20 @@
+<%- include('temporary/_header')%>
+
+
+<h1 class="text-center m-5">Update Details</h1>
+
+<div class="container">
+    <form action="/<%=contact.id%>?_method=PUT" method="POST" class="mb-5" autocomplete="off">
+    <input type="text" name="name"class="form-control mb-2" placeholder="Enter name Here" value="<%=contact.name%>">
+    <input type="email" name="email"class="form-control mb-2" placeholder="Enter email Here" value="<%=contact.email%>">
+    <input type="number" name="contact"class="form-control mb-2" placeholder="Enter contact Here" value="<%=contact.contact%>">
+
+    <button type="submit" class="btn btn-success form-control">Save</button>
+
+    </form>
+</div>
+
+
+
+
+<%- include('temporary/_footer')%>
